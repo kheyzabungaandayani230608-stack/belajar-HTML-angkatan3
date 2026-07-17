@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: #082052;
+            background-color: #082052;
+            font-family:Helvetica;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type='text'],
+        input[type='date'],
+        input[type='email'],
+        select {
+            width: 95%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 10px;
+        }
+
+        button {
+            background-color: #082052;
+            padding: 2%;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #082052;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px #e3e8ec;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="first_name">Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Your Name">
+            </div>
+        
+            <div class="form-group">
+                <br><label for="email">Email</label>
+                <input type="email" name="email" placeholder="Drop Your Email"> <br>
+            </div>
+
+            <div class="form-group">
+                <label for="">Birth Date</label>
+                <input type="date" name="birth_date"> <br>
+            </div>
+
+            <div class="form-group">
+                <label for="">Gender</label>
+                <input type="radio" name="Gender" value="F">Female
+                <input type="radio" name="Gender" value="M">Male<br>
+            </div>
+
+            <div class="form-group">
+                <label for="">Religion</label>
+                <select name="religi" id="">
+                <option value="" disabled selected hidden>Choose Your Religion</option>   
+                    <option value="Islam">Islam</option>
+                    <option value="Christian">Christian</option>
+                    <option value="Catholic">Catholic</option>
+                    <option value="Hinduism">Hinduism</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Confusianism">Confusianism</option> 
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <br><label for="">Hobbies</label>
+                <br><input type="checkbox" value="Menyanyi" name="Menyanyi">Menyanyi
+                <br><input type="checkbox" value="Menari" name="menari">Menari
+                <br><input type="checkbox" value="Membaca" name="Membaca">Membaca
+            </div>
+            <button>Save</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
