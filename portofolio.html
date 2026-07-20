@@ -9,39 +9,106 @@
 
 <body>
     <header class="navbar">
-    <h2 class="logo">Portofolio</h2>
-    <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Ability</a>
-        <a href="">Contact</a>
-    </nav>   
+      <div class="nav-container">
+        <h2 class="logo">Portofolio</h2>
+        <button onclick="toggleMenu()">☰</button>
+        <nav id="menu">
+            <a href="#home">Home</a>
+            <a href="#ability">Ability</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>   
+      </div>
+    
     </header>  
     <section id="home" class="parallax bg-1">
         <div class="content">
             <h1>Hi, Kheyza Bunga</h1>
             <img class="img-profile" src="download.jfif" alt="" width="200">
-            <p>Professional Web Programmer</p>
+            <p>Junior Web Programmer</p>
         </div>
     </section>
-        
-    <section id="about" class="about">
-        <div class="about-content">
-            <h1>About Me</h1>
-            <p>Hi, I'm Kheyza, a web enthusiast with a genuine passion for building modern, responsive, and user-centered digital experiences. Alongside web development, I have a strong interest in graphic design, where I enjoy creating visually engaging layouts and meaningful visual identities. By blending technical expertise with creative thinking, I strive to develop websites that are not only functional and efficient but also aesthetically refined and intuitive.</p>
-            <p>I see every project as an opportunity to expand my knowledge, sharpen my problem-solving skills, and explore innovative ideas. Driven by curiosity and a commitment to continuous growth, I enjoy experimenting with new technologies, design trends, and development practices. My goal is to craft impactful digital experiences that seamlessly unite creativity, usability, and performance while leaving a lasting impression on every user.</p>
+    <section id="ability" class="normal-section">
+        <div class="container">
+     <h1>What Kheyza Can Do?</h1>
+        <div class="wraper">
+          <div class="ability">
+                <h3>Kheyza's Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Phyton</li>
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="ability">
+                <h3>Kheyza's Experiences</h3>
+                <ul>
+                    <li>Apa ya 1</li>
+                    <li>Apa ya 2</li>
+                    <li>Apa ya 3</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section id="about" class="parallax bg-2">
+        <div class="content">
+            <h1>Who's Kheyza?</h1>
+            <div class="gallery">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpbwMQwlMVV3zKVvuay0DvZrFo4hnqFrwIKRnuXxkHcbUJXoLyiZu2B0f&s=10" alt="">
+                    <figcaption>Gambar 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpbwMQwlMVV3zKVvuay0DvZrFo4hnqFrwIKRnuXxkHcbUJXoLyiZu2B0f&s=10" alt="">
+                    <figcaption>Gambar 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpbwMQwlMVV3zKVvuay0DvZrFo4hnqFrwIKRnuXxkHcbUJXoLyiZu2B0f&s=10" alt="">
+                    <figcaption>Gambar 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpbwMQwlMVV3zKVvuay0DvZrFo4hnqFrwIKRnuXxkHcbUJXoLyiZu2B0f&s=10" alt="">
+                    <figcaption>Gambar 4</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
 
-    <section id="ability" class="parallaxs bg-2">
-        <div class="ability-content">
-        <h1>What Kheyza Can Do?</h1>
-        <img class="img-ab-web" src="Programming writing code on laptop realistic illustration.jpg" alt="" width="200">
-        <img class="img-ab-dg" src="Trendy illustrations with a vibrant collage combines photography and graphic elements.jpg" alt="" width="200">
-        <img class="img-ab-dv" src="Data analysis Customizable Isometric Illustrations _ Amico Style.jpg" alt="" width="200">
+    <section id="contact" class="normal-section2">
+        <div class="container">
+    <h1>Contact Me If You Can</h1>
+    <p>Feel free contact me for collaboration</p>
+        <div class="wraper">
+            <div class="contact">
+        <div class="container"> 
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="first_name">Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <br><label for="email">Email</label>
+                <input type="email" name="email" placeholder="Drop Your Email"> <br>
+            </div>
+             <div class="form-group">
+                <br><label for="message">Message</label>
+               <textarea name="message" id="message" placeholder="Send Me Some Loveword"></textarea> <br>
+            </div>
+            <button>Submit</button>
+        </form>
+            </div>
+        </div>
         </div>
     </section>
-    <section></section> 
+    <script>
+        function toggleMenu (){
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
